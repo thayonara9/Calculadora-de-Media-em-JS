@@ -347,7 +347,13 @@ botao.style.color = 'white';
 secao.appendChild(botao)
 
 // javascript
+
+const resultado = document.createElement('div');
+
+resultado.innerText = '';
+
 var media = 0;
+
 botao.addEventListener('click', function(){
     var nome = inputNome.value;
 
@@ -359,8 +365,7 @@ botao.addEventListener('click', function(){
 
     media = (nota1 + nota2 + nota3) /3;
 
-    const resultado = document.createElement('div');
-
+    
     resultado.style.height = '100px';
 
     resultado.style.width = '300px';
